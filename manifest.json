@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "sequence": 2,
-  "published": "2026-09-23T07:32:41+00:00",
-  "expires": "2027-03-22T07:32:41+00:00",
+  "sequence": 3,
+  "published": "2026-09-23T09:04:52.9999999+00:00",
+  "expires": "2027-03-22T09:04:52.9999999+00:00",
   "runtimes": {
     "ollama": {
       "name": "Ollama",

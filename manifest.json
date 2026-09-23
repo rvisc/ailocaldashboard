@@ -1,0 +1,608 @@
+{
+  "schemaVersion": 1,
+  "sequence": 2,
+  "published": "2026-09-23T07:32:41+00:00",
+  "expires": "2027-03-22T07:32:41+00:00",
+  "runtimes": {
+    "ollama": {
+      "name": "Ollama",
+      "version": "0.34.3",
+      "homepage": "https://ollama.com/",
+      "licenseUrl": "https://github.com/ollama/ollama/blob/main/LICENSE",
+      "wingetId": "Ollama.Ollama",
+      "installer": {
+        "url": "https://github.com/ollama/ollama/releases/download/v0.34.3/OllamaSetup.exe",
+        "sha256": "fe1cce219b07ba13982a9419bfa3697c911bf77667ee636c967baed1b06ee3a0",
+        "size": 1570198936,
+        "signer": "Ollama Inc.",
+        "arguments": "/SILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
+      }
+    },
+    "lmstudio": {
+      "name": "LM Studio",
+      "version": "0.4.25",
+      "homepage": "https://lmstudio.ai/",
+      "licenseUrl": "https://lmstudio.ai/app-terms",
+      "wingetId": "ElementLabs.LMStudio",
+      "installer": {
+        "url": "https://installers.lmstudio.ai/win32/x64/0.4.25-1/LM-Studio-0.4.25-1-x64.exe",
+        "sha256": "76c025ef4abf38edac36da09ce1a54d2803b3871a074b95bd9dffdb231458f0c",
+        "size": 616728536,
+        "signer": "Element Labs Inc.",
+        "arguments": "/S"
+      }
+    }
+  },
+  "models": [
+    {
+      "id": "ollama-qwen3.5-0.8b",
+      "runtime": "ollama",
+      "ref": "qwen3.5:0.8b",
+      "name": "Qwen3.5 0.8B",
+      "family": "Qwen3.5",
+      "parameters": "0.8B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 1036046583,
+      "minMemoryBytes": 0,
+      "tags": [
+        "small",
+        "chat",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-llama3.2-3b",
+      "runtime": "ollama",
+      "ref": "llama3.2:3b",
+      "name": "Llama 3.2 3B",
+      "family": "Llama 3.2",
+      "parameters": "3B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 2019393189,
+      "minMemoryBytes": 0,
+      "tags": [
+        "small",
+        "chat"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-gemma4-e2b",
+      "runtime": "ollama",
+      "ref": "gemma4:e2b",
+      "name": "Gemma 4 E2B",
+      "family": "Gemma 4",
+      "parameters": "E2B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 7162405886,
+      "minMemoryBytes": 0,
+      "tags": [
+        "small",
+        "chat",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-gemma4-e4b",
+      "runtime": "ollama",
+      "ref": "gemma4:e4b",
+      "name": "Gemma 4 E4B",
+      "family": "Gemma 4",
+      "parameters": "E4B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 9608350718,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "vision",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-granite4-3b",
+      "runtime": "ollama",
+      "ref": "granite4:3b",
+      "name": "Granite 4 3B",
+      "family": "Granite 4",
+      "parameters": "3B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 2099521385,
+      "minMemoryBytes": 0,
+      "tags": [
+        "small",
+        "tools"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-qwen3.5-4b",
+      "runtime": "ollama",
+      "ref": "qwen3.5:4b",
+      "name": "Qwen3.5 4B",
+      "family": "Qwen3.5",
+      "parameters": "4B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 3389983735,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "reasoning",
+        "multilingual"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "ollama-qwen3.5-9b",
+      "runtime": "ollama",
+      "ref": "qwen3.5:9b",
+      "name": "Qwen3.5 9B",
+      "family": "Qwen3.5",
+      "parameters": "9B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 6594474711,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools",
+        "multilingual"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "ollama-deepseek-r1-8b",
+      "runtime": "ollama",
+      "ref": "deepseek-r1:8b",
+      "name": "DeepSeek-R1 8B",
+      "family": "DeepSeek-R1",
+      "parameters": "8B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 5225376047,
+      "minMemoryBytes": 0,
+      "tags": [
+        "reasoning"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-gemma4-12b",
+      "runtime": "ollama",
+      "ref": "gemma4:12b",
+      "name": "Gemma 4 12B",
+      "family": "Gemma 4",
+      "parameters": "12B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 7556508396,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "vision",
+        "multilingual"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "ollama-phi4-14b",
+      "runtime": "ollama",
+      "ref": "phi4:14b",
+      "name": "Phi-4 14B",
+      "family": "Phi-4",
+      "parameters": "14B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 9053116391,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "reasoning"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-gpt-oss-20b",
+      "runtime": "ollama",
+      "ref": "gpt-oss:20b",
+      "name": "gpt-oss 20B",
+      "family": "gpt-oss",
+      "parameters": "21B MoE",
+      "quantization": "MXFP4",
+      "sizeBytes": 13793441244,
+      "minMemoryBytes": 0,
+      "tags": [
+        "reasoning",
+        "tools"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "ollama-mistral-small3.2-24b",
+      "runtime": "ollama",
+      "ref": "mistral-small3.2:24b",
+      "name": "Mistral Small 3.2 24B",
+      "family": "Mistral Small",
+      "parameters": "24B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 15177384862,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "vision",
+        "tools",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-qwen3.8-27b",
+      "runtime": "ollama",
+      "ref": "qwen3.8:27b",
+      "name": "Qwen3.8 27B",
+      "family": "Qwen3.8",
+      "parameters": "27B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 17741872154,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools",
+        "multilingual"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "ollama-qwen3.5-35b-a3b",
+      "runtime": "ollama",
+      "ref": "qwen3.5:35b-a3b",
+      "name": "Qwen3.5 35B-A3B",
+      "family": "Qwen3.5",
+      "parameters": "35B MoE",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 23869191742,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-qwen3-coder-30b",
+      "runtime": "ollama",
+      "ref": "qwen3-coder:30b",
+      "name": "Qwen3-Coder 30B",
+      "family": "Qwen3-Coder",
+      "parameters": "30B MoE",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 18556700761,
+      "minMemoryBytes": 0,
+      "tags": [
+        "code",
+        "tools"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-gemma4-31b",
+      "runtime": "ollama",
+      "ref": "gemma4:31b",
+      "name": "Gemma 4 31B",
+      "family": "Gemma 4",
+      "parameters": "31B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 19868981791,
+      "minMemoryBytes": 0,
+      "tags": [
+        "chat",
+        "vision",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "ollama-gpt-oss-120b",
+      "runtime": "ollama",
+      "ref": "gpt-oss:120b",
+      "name": "gpt-oss 120B",
+      "family": "gpt-oss",
+      "parameters": "117B MoE",
+      "quantization": "MXFP4",
+      "sizeBytes": 65369818941,
+      "minMemoryBytes": 0,
+      "tags": [
+        "reasoning",
+        "tools"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-qwen3.5-2b",
+      "runtime": "lmstudio",
+      "ref": "qwen/qwen3.5-2b",
+      "name": "Qwen3.5 2B",
+      "family": "Qwen3.5",
+      "parameters": "2B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 1900000000,
+      "minMemoryBytes": 2147483648,
+      "tags": [
+        "small",
+        "chat",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-llama-3.2-3b",
+      "runtime": "lmstudio",
+      "ref": "meta/llama-3.2-3b",
+      "name": "Llama 3.2 3B",
+      "family": "Llama 3.2",
+      "parameters": "3B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 2020000000,
+      "minMemoryBytes": 2147483648,
+      "tags": [
+        "small",
+        "chat"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-granite-4-micro",
+      "runtime": "lmstudio",
+      "ref": "ibm/granite-4-micro",
+      "name": "Granite 4 Micro",
+      "family": "Granite 4",
+      "parameters": "3B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 2100000000,
+      "minMemoryBytes": 2147483648,
+      "tags": [
+        "small",
+        "tools"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-gemma-4-e2b",
+      "runtime": "lmstudio",
+      "ref": "google/gemma-4-e2b",
+      "name": "Gemma 4 E2B",
+      "family": "Gemma 4",
+      "parameters": "E2B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 3200000000,
+      "minMemoryBytes": 4294967296,
+      "tags": [
+        "small",
+        "chat",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-gemma-4-e4b",
+      "runtime": "lmstudio",
+      "ref": "google/gemma-4-e4b",
+      "name": "Gemma 4 E4B",
+      "family": "Gemma 4",
+      "parameters": "E4B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 6330000000,
+      "minMemoryBytes": 6442450944,
+      "tags": [
+        "chat",
+        "vision",
+        "multilingual"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "lmstudio-qwen3.5-4b",
+      "runtime": "lmstudio",
+      "ref": "qwen/qwen3.5-4b",
+      "name": "Qwen3.5 4B",
+      "family": "Qwen3.5",
+      "parameters": "4B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 3400000000,
+      "minMemoryBytes": 4294967296,
+      "tags": [
+        "chat",
+        "reasoning",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-qwen3.5-9b",
+      "runtime": "lmstudio",
+      "ref": "qwen/qwen3.5-9b",
+      "name": "Qwen3.5 9B",
+      "family": "Qwen3.5",
+      "parameters": "9B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 6600000000,
+      "minMemoryBytes": 7516192768,
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools",
+        "multilingual"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "lmstudio-deepseek-r1-8b",
+      "runtime": "lmstudio",
+      "ref": "deepseek/deepseek-r1-0528-qwen3-8b",
+      "name": "DeepSeek-R1 0528 (Qwen3 8B)",
+      "family": "DeepSeek-R1",
+      "parameters": "8B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 5000000000,
+      "minMemoryBytes": 4294967296,
+      "tags": [
+        "reasoning"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-gemma-4-12b",
+      "runtime": "lmstudio",
+      "ref": "google/gemma-4-12b",
+      "name": "Gemma 4 12B",
+      "family": "Gemma 4",
+      "parameters": "12B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 8000000000,
+      "minMemoryBytes": 7516192768,
+      "tags": [
+        "chat",
+        "vision",
+        "multilingual"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "lmstudio-phi-4",
+      "runtime": "lmstudio",
+      "ref": "microsoft/phi-4",
+      "name": "Phi-4 14B",
+      "family": "Phi-4",
+      "parameters": "14B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 9050000000,
+      "minMemoryBytes": 8589934592,
+      "tags": [
+        "chat",
+        "reasoning"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-gpt-oss-20b",
+      "runtime": "lmstudio",
+      "ref": "openai/gpt-oss-20b",
+      "name": "gpt-oss 20B",
+      "family": "gpt-oss",
+      "parameters": "21B MoE",
+      "quantization": "MXFP4",
+      "sizeBytes": 12100000000,
+      "minMemoryBytes": 12884901888,
+      "tags": [
+        "reasoning",
+        "tools"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "lmstudio-mistral-small-3.2",
+      "runtime": "lmstudio",
+      "ref": "mistralai/mistral-small-3.2",
+      "name": "Mistral Small 3.2 24B",
+      "family": "Mistral Small",
+      "parameters": "24B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 14300000000,
+      "minMemoryBytes": 15032385536,
+      "tags": [
+        "chat",
+        "vision",
+        "tools",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-qwen3.8-27b",
+      "runtime": "lmstudio",
+      "ref": "qwen/qwen3.8-27b",
+      "name": "Qwen3.8 27B",
+      "family": "Qwen3.8",
+      "parameters": "27B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 17000000000,
+      "minMemoryBytes": 17179869184,
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools",
+        "multilingual"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "lmstudio-qwen3.5-35b-a3b",
+      "runtime": "lmstudio",
+      "ref": "qwen/qwen3.5-35b-a3b",
+      "name": "Qwen3.5 35B-A3B",
+      "family": "Qwen3.5",
+      "parameters": "35B MoE",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 21000000000,
+      "minMemoryBytes": 22548578304,
+      "tags": [
+        "chat",
+        "reasoning",
+        "tools",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-qwen3-coder-30b",
+      "runtime": "lmstudio",
+      "ref": "qwen/qwen3-coder-30b",
+      "name": "Qwen3-Coder 30B",
+      "family": "Qwen3-Coder",
+      "parameters": "30B MoE",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 18600000000,
+      "minMemoryBytes": 16106127360,
+      "tags": [
+        "code",
+        "tools"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-gemma-4-31b",
+      "runtime": "lmstudio",
+      "ref": "google/gemma-4-31b",
+      "name": "Gemma 4 31B",
+      "family": "Gemma 4",
+      "parameters": "31B",
+      "quantization": "Q4_K_M",
+      "sizeBytes": 19500000000,
+      "minMemoryBytes": 20401094656,
+      "tags": [
+        "chat",
+        "vision",
+        "multilingual"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "lmstudio-gpt-oss-120b",
+      "runtime": "lmstudio",
+      "ref": "openai/gpt-oss-120b",
+      "name": "gpt-oss 120B",
+      "family": "gpt-oss",
+      "parameters": "117B MoE",
+      "quantization": "MXFP4",
+      "sizeBytes": 65300000000,
+      "minMemoryBytes": 69793218560,
+      "tags": [
+        "reasoning",
+        "tools"
+      ],
+      "recommended": false
+    }
+  ]
+}

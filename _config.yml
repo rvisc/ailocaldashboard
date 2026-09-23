@@ -1,0 +1,20 @@
+# La pagina pubblica di AI Local Dashboard — https://rvisc.github.io/ailocaldashboard/
+#
+# Le stesse tre righe di EasyJobCall e SourceMonitor, per le stesse ragioni.
+
+# Il tema Primer disegna un'intestazione sua quando il titolo del sito e' diverso da
+# quello della pagina: senza questa riga il titolo del sito sarebbe il nome del
+# repository, «ailocaldashboard», e le intestazioni diventerebbero due.
+title: AI Local Dashboard
+
+# Finisce nel <meta name="description"> e, con il tema Primer, anche nel titolo della
+# scheda del browser: corta, come in EasyJobCall.
+description: Un modello IA locale con Ollama e LM Studio
+
+# Il tema bloccato: se il predefinito di GitHub Pages cambia, questa pagina resta com'e'.
+# E' anche il nome che style.scss importa: i due file si tengono per mano.
+theme: jekyll-theme-primer
+
+# Il catalogo firmato (manifest.json e manifest.json.sig) sta in questa stessa cartella e
+# si pubblica cosi' com'e': Jekyll serve i file .json e .sig senza toccarli. Nessuna riga
+# serve per questo; e' scritto qui perche' chi apre questo file sappia che ci sono.

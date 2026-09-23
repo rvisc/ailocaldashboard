@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Local Dashboard — Privacy</title>
+<!--
+  GENERATA da tools/make-page.py: non modificare a mano.
+  La fonte sono i sei setup/documenti/privacy.*.txt, cioe' gli stessi testi che viaggiano nel pacchetto.
+  Pagina autonoma, senza fogli di stile esterni ne' tema Jekyll: il suo indirizzo sta
+  nella scheda del Microsoft Store e deve aprirsi anche se il tema del sito non compila.
+-->
+<style>
+  :root {
+    --paper: #f6f6fa; --plate: #ffffff; --ink: #17162a; --ink-soft: #4b4a60;
+    --ink-faint: #6b6a80; --rule: #e0e0ea; --first: #5b4cdb; --navy: #1b1745;
+    --sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #13121f; --plate: #1d1b2e; --ink: #f0eff7; --ink-soft: #bdbad2;
+      --ink-faint: #9592ad; --rule: #2f2c48; --first: #a99cff; --navy: #e4e0ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 2rem 1.25rem 4rem; background: var(--paper); color: var(--ink);
+         font-family: var(--sans); font-size: 1rem; line-height: 1.65; }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0; color: var(--navy); letter-spacing: .01em; }
+  nav { margin: 1.25rem 0 0; padding: .9rem 0; border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule); }
+  nav a { color: var(--first); text-decoration: none; margin-right: 1.1rem; display: inline-block; padding: .15rem 0; }
+  nav a:hover { text-decoration: underline; }
+  section { margin: 3rem 0 0; padding: 1.75rem 1.75rem .5rem; background: var(--plate);
+            border: 1px solid var(--rule); border-radius: .5rem; }
+  h2 { font-size: 1.15rem; margin: 0; color: var(--navy); letter-spacing: .03em; }
+  h3 { font-size: .95rem; margin: 2rem 0 .35rem; letter-spacing: .04em; color: var(--ink-soft); }
+  p { margin: .35rem 0 1.1rem; }
+  p.versione { color: var(--ink-faint); margin: .3rem 0 1.6rem; font-size: .95rem; }
+  strong { font-weight: 600; }
+  ul { margin: .35rem 0 1.1rem; padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code { font-family: Consolas, "Cascadia Mono", monospace; font-size: .92em; background: var(--paper);
+         border: 1px solid var(--rule); border-radius: .25rem; padding: 0 .25em; }
+  a { color: var(--first); }
+  @media (max-width: 34rem) { section { padding: 1.25rem 1.1rem .25rem; } }
+</style>
+</head>
+<body>
+<main>
+
+<h1>AI Local Dashboard — Privacy</h1>
+
+<nav>
+<a href="#it">Italiano</a>
+<a href="#en">English</a>
+<a href="#fr">Français</a>
+<a href="#es">Español</a>
+<a href="#de">Deutsch</a>
+<a href="#zh">中文</a>
+<a href="./">&larr; AI Local Dashboard</a>
+</nav>
+
+<section id="it" lang="it">
+<h2>INFORMATIVA SULLA PRIVACY</h2>
+<p class="versione">AI Local Dashboard — versione 1.0.0</p>
+<p>AI Local Dashboard non raccoglie dati personali per conto del Titolare e non gliene manda nessuno. Non contiene telemetria, non traccia l'uso, non richiede un account, non mostra pubblicità e non comunica con nessun server del Titolare, in nessuna configurazione.</p>
+<h3>CHE COSA ESCE DAL TUO COMPUTER</h3>
+<p>Il programma si collega a internet solo nei casi elencati qui sotto, e sempre dal tuo computer verso server pubblici. Ogni server che riceve una richiesta vede ciò che vede in ogni richiesta web: l'indirizzo IP della tua connessione, l'ora e l'identificativo del programma («AILocalDashboard» seguito dalla versione).</p>
+<ul>
+<li>All'avvio, al massimo ogni sei ore, scarica il catalogo firmato da https://rvisc.github.io/ailocaldashboard/manifest.json, un file pubblicato su GitHub Pages: lo riceve GitHub, che lo ospita.</li>
+<li>Quando premi Installa o Aggiorna, scarica l'installer dall'indirizzo ufficiale indicato nel catalogo (github.com per Ollama, lmstudio.ai per LM Studio). Con «Installa con winget» è winget, la Gestione pacchetti di Windows, a collegarsi ai server di Microsoft e dell'editore.</li>
+<li>Quando scarichi un modello, lo scarica il motore stesso (Ollama o LM Studio) dai propri server e da quelli dei modelli: a quelle richieste si applicano le informative di chi le riceve.</li>
+</ul>
+<p>Le domande che scrivi nella prova del modello vanno solo al server locale del motore, su questo computer: non escono da qui. Se attivi l'accesso dalla rete locale, il server risponde anche agli altri computer della tua rete, e le loro domande arrivano a questo computer.</p>
+<h3>CHE COSA RESTA SUL TUO COMPUTER</h3>
+<p>Tutto ciò che il programma scrive sta nella sua cartella di lavoro (normalmente Documenti\AILocalDashboard): le impostazioni, la copia verificata del catalogo, il registro degli ultimi 30 giorni e gli installer non ancora usati. Il registro contiene i nomi dei componenti del computer, i percorsi dei programmi e le operazioni svolte; non contiene le domande della prova né le risposte. Puoi cancellare tutto in qualunque momento cancellando quella cartella. Per configurare Ollama, e solo quando lo chiedi, il programma scrive la variabile d'ambiente OLLAMA_HOST del tuo utente, come indica la documentazione di Ollama.</p>
+<h3>OLLAMA, LM STUDIO E I MODELLI</h3>
+<p>Ollama, LM Studio e i modelli sono prodotti di terzi. Una volta installati funzionano da soli, con le proprie impostazioni e le proprie informative sulla privacy, che si applicano all'uso che ne fai anche fuori da AI Local Dashboard. Il Titolare non riceve niente di ciò che fai con loro.</p>
+<h3>MICROSOFT STORE</h3>
+<p>Se hai installato AI Local Dashboard dal Microsoft Store, i dati dell'installazione li tratta Microsoft secondo la propria informativa. Il Titolare non li riceve.</p>
+<h3>TITOLARE E CONTATTO</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="en" lang="en">
+<h2>PRIVACY POLICY</h2>
+<p class="versione">AI Local Dashboard — version 1.0.0</p>
+<p>AI Local Dashboard does not collect personal data on behalf of the Owner and sends none to it. It contains no telemetry, does not track usage, requires no account, shows no advertising and does not communicate with any server of the Owner, in any configuration.</p>
+<h3>WHAT LEAVES YOUR COMPUTER</h3>
+<p>The program connects to the internet only in the cases listed below, always from your computer to public servers. Every server that receives a request sees what it sees in any web request: the IP address of your connection, the time and the program's identifier ("AILocalDashboard" followed by the version).</p>
+<ul>
+<li>At startup, at most every six hours, it downloads the signed catalogue from https://rvisc.github.io/ailocaldashboard/manifest.json, a file published on GitHub Pages: GitHub, which hosts it, receives the request.</li>
+<li>When you press Install or Update, it downloads the installer from the official address listed in the catalogue (github.com for Ollama, lmstudio.ai for LM Studio). With "Install with winget" it is winget, the Windows Package Manager, that connects to the servers of Microsoft and of the publisher.</li>
+<li>When you download a model, the engine itself (Ollama or LM Studio) downloads it from its own servers and those of the models: those requests are covered by the policies of whoever receives them.</li>
+</ul>
+<p>The questions you write in the model test go only to the engine's local server, on this computer: they do not leave it. If you turn on local network access, the server also answers the other computers on your network, and their questions reach this computer.</p>
+<h3>WHAT STAYS ON YOUR COMPUTER</h3>
+<p>Everything the program writes is in its working folder (normally Documents\AILocalDashboard): the settings, the verified copy of the catalogue, the log of the last 30 days and the installers not yet used. The log contains the names of the computer's components, the program paths and the operations carried out; it contains neither the test questions nor the answers. You can delete everything at any time by deleting that folder. To configure Ollama, and only when you ask for it, the program sets your user's OLLAMA_HOST environment variable, as Ollama's documentation says.</p>
+<h3>OLLAMA, LM STUDIO AND THE MODELS</h3>
+<p>Ollama, LM Studio and the models are third-party products. Once installed, they work on their own, with their own settings and their own privacy policies, which apply to your use of them even outside AI Local Dashboard. The Owner receives nothing of what you do with them.</p>
+<h3>MICROSOFT STORE</h3>
+<p>If you installed AI Local Dashboard from the Microsoft Store, the installation data is processed by Microsoft under its own policy. The Owner does not receive it.</p>
+<h3>OWNER AND CONTACT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="fr" lang="fr">
+<h2>POLITIQUE DE CONFIDENTIALITÉ</h2>
+<p class="versione">AI Local Dashboard — version 1.0.0</p>
+<p>AI Local Dashboard ne collecte aucune donnée personnelle pour le compte du Titulaire et ne lui en envoie aucune. Il ne contient pas de télémétrie, ne suit pas l'utilisation, ne demande pas de compte, n'affiche pas de publicité et ne communique avec aucun serveur du Titulaire, dans aucune configuration.</p>
+<h3>CE QUI SORT DE VOTRE ORDINATEUR</h3>
+<p>Le programme se connecte à internet uniquement dans les cas énumérés ci-dessous, toujours depuis votre ordinateur vers des serveurs publics. Chaque serveur qui reçoit une requête voit ce qu'il voit dans toute requête web : l'adresse IP de votre connexion, l'heure et l'identifiant du programme (« AILocalDashboard » suivi de la version).</p>
+<ul>
+<li>Au démarrage, au plus toutes les six heures, il télécharge le catalogue signé depuis https://rvisc.github.io/ailocaldashboard/manifest.json, un fichier publié sur GitHub Pages : c'est GitHub, qui l'héberge, qui reçoit la requête.</li>
+<li>Quand vous appuyez sur Installer ou Mettre à jour, il télécharge le programme d'installation depuis l'adresse officielle indiquée dans le catalogue (github.com pour Ollama, lmstudio.ai pour LM Studio). Avec « Installer avec winget », c'est winget, le Gestionnaire de paquets Windows, qui se connecte aux serveurs de Microsoft et de l'éditeur.</li>
+<li>Quand vous téléchargez un modèle, c'est le moteur lui-même (Ollama ou LM Studio) qui le télécharge depuis ses serveurs et ceux des modèles : ces requêtes relèvent des politiques de ceux qui les reçoivent.</li>
+</ul>
+<p>Les questions que vous écrivez dans l'essai du modèle vont uniquement au serveur local du moteur, sur cet ordinateur : elles n'en sortent pas. Si vous activez l'accès depuis le réseau local, le serveur répond aussi aux autres ordinateurs de votre réseau, et leurs questions arrivent sur cet ordinateur.</p>
+<h3>CE QUI RESTE SUR VOTRE ORDINATEUR</h3>
+<p>Tout ce que le programme écrit se trouve dans son dossier de travail (normalement Documents\AILocalDashboard) : les paramètres, la copie vérifiée du catalogue, le journal des 30 derniers jours et les programmes d'installation pas encore utilisés. Le journal contient les noms des composants de l'ordinateur, les chemins des programmes et les opérations effectuées ; il ne contient ni les questions de l'essai ni les réponses. Vous pouvez tout effacer à tout moment en supprimant ce dossier. Pour configurer Ollama, et seulement quand vous le demandez, le programme définit la variable d'environnement OLLAMA_HOST de votre utilisateur, comme l'indique la documentation d'Ollama.</p>
+<h3>OLLAMA, LM STUDIO ET LES MODÈLES</h3>
+<p>Ollama, LM Studio et les modèles sont des produits tiers. Une fois installés, ils fonctionnent seuls, avec leurs propres paramètres et leurs propres politiques de confidentialité, qui s'appliquent à l'usage que vous en faites même en dehors de AI Local Dashboard. Le Titulaire ne reçoit rien de ce que vous faites avec eux.</p>
+<h3>MICROSOFT STORE</h3>
+<p>Si vous avez installé AI Local Dashboard depuis le Microsoft Store, les données de l'installation sont traitées par Microsoft selon sa propre politique. Le Titulaire ne les reçoit pas.</p>
+<h3>TITULAIRE ET CONTACT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="es" lang="es">
+<h2>POLÍTICA DE PRIVACIDAD</h2>
+<p class="versione">AI Local Dashboard — versión 1.0.0</p>
+<p>AI Local Dashboard no recopila datos personales por cuenta del Titular y no le envía ninguno. No contiene telemetría, no rastrea el uso, no pide una cuenta, no muestra publicidad y no se comunica con ningún servidor del Titular, en ninguna configuración.</p>
+<h3>QUÉ SALE DE TU ORDENADOR</h3>
+<p>El programa se conecta a internet solo en los casos que se indican a continuación, siempre desde tu ordenador hacia servidores públicos. Cada servidor que recibe una petición ve lo que ve en cualquier petición web: la dirección IP de tu conexión, la hora y el identificador del programa («AILocalDashboard» seguido de la versión).</p>
+<ul>
+<li>Al iniciarse, como mucho cada seis horas, descarga el catálogo firmado desde https://rvisc.github.io/ailocaldashboard/manifest.json, un archivo publicado en GitHub Pages: la petición la recibe GitHub, que lo aloja.</li>
+<li>Cuando pulsas Instalar o Actualizar, descarga el instalador desde la dirección oficial indicada en el catálogo (github.com para Ollama, lmstudio.ai para LM Studio). Con «Instalar con winget» es winget, el Administrador de paquetes de Windows, quien se conecta a los servidores de Microsoft y del editor.</li>
+<li>Cuando descargas un modelo, lo descarga el propio motor (Ollama o LM Studio) desde sus servidores y los de los modelos: a esas peticiones se aplican las políticas de quien las recibe.</li>
+</ul>
+<p>Las preguntas que escribes en la prueba del modelo van solo al servidor local del motor, en este ordenador: no salen de aquí. Si activas el acceso desde la red local, el servidor responde también a los demás ordenadores de tu red, y sus preguntas llegan a este ordenador.</p>
+<h3>QUÉ SE QUEDA EN TU ORDENADOR</h3>
+<p>Todo lo que escribe el programa está en su carpeta de trabajo (normalmente Documentos\AILocalDashboard): la configuración, la copia verificada del catálogo, el registro de los últimos 30 días y los instaladores aún no usados. El registro contiene los nombres de los componentes del ordenador, las rutas de los programas y las operaciones realizadas; no contiene las preguntas de la prueba ni las respuestas. Puedes borrarlo todo en cualquier momento eliminando esa carpeta. Para configurar Ollama, y solo cuando lo pides, el programa define la variable de entorno OLLAMA_HOST de tu usuario, como indica la documentación de Ollama.</p>
+<h3>OLLAMA, LM STUDIO Y LOS MODELOS</h3>
+<p>Ollama, LM Studio y los modelos son productos de terceros. Una vez instalados funcionan por su cuenta, con su propia configuración y sus propias políticas de privacidad, que se aplican al uso que haces de ellos incluso fuera de AI Local Dashboard. El Titular no recibe nada de lo que haces con ellos.</p>
+<h3>MICROSOFT STORE</h3>
+<p>Si has instalado AI Local Dashboard desde Microsoft Store, los datos de la instalación los trata Microsoft según su propia política. El Titular no los recibe.</p>
+<h3>TITULAR Y CONTACTO</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="de" lang="de">
+<h2>DATENSCHUTZERKLÄRUNG</h2>
+<p class="versione">AI Local Dashboard — Version 1.0.0</p>
+<p>AI Local Dashboard erhebt keine personenbezogenen Daten im Auftrag des Verantwortlichen und sendet ihm keine. Es enthält keine Telemetrie, verfolgt die Nutzung nicht, verlangt kein Konto, zeigt keine Werbung und kommuniziert mit keinem Server des Verantwortlichen, in keiner Konfiguration.</p>
+<h3>WAS DEN EIGENEN RECHNER VERLÄSST</h3>
+<p>Das Programm verbindet sich nur in den unten aufgeführten Fällen mit dem Internet, immer vom eigenen Rechner zu öffentlichen Servern. Jeder Server, der eine Anfrage erhält, sieht, was er bei jeder Webanfrage sieht: die IP-Adresse der Verbindung, die Uhrzeit und die Kennung des Programms („AILocalDashboard“ gefolgt von der Version).</p>
+<ul>
+<li>Beim Start, höchstens alle sechs Stunden, lädt es den signierten Katalog von https://rvisc.github.io/ailocaldashboard/manifest.json, eine auf GitHub Pages veröffentlichte Datei: Die Anfrage erhält GitHub, das sie bereitstellt.</li>
+<li>Beim Drücken von Installieren oder Aktualisieren lädt es das Installationsprogramm von der im Katalog angegebenen offiziellen Adresse (github.com für Ollama, lmstudio.ai für LM Studio). Mit „Mit winget installieren“ verbindet sich winget, die Windows-Paketverwaltung, mit den Servern von Microsoft und des Herstellers.</li>
+<li>Beim Herunterladen eines Modells lädt die Engine selbst (Ollama oder LM Studio) es von ihren eigenen Servern und denen der Modelle: Für diese Anfragen gelten die Erklärungen der Empfänger.</li>
+</ul>
+<p>Die Fragen im Modelltest gehen nur an den lokalen Server der Engine auf diesem Rechner: Sie verlassen ihn nicht. Ist der Zugriff aus dem lokalen Netz eingeschaltet, antwortet der Server auch den anderen Rechnern im eigenen Netz, und deren Fragen erreichen diesen Rechner.</p>
+<h3>WAS AUF DEM EIGENEN RECHNER BLEIBT</h3>
+<p>Alles, was das Programm schreibt, liegt in seinem Arbeitsordner (normalerweise Dokumente\AILocalDashboard): die Einstellungen, die geprüfte Kopie des Katalogs, das Protokoll der letzten 30 Tage und noch nicht verwendete Installationsprogramme. Das Protokoll enthält die Namen der Rechnerkomponenten, die Pfade der Programme und die ausgeführten Vorgänge; es enthält weder die Testfragen noch die Antworten. Alles lässt sich jederzeit löschen, indem dieser Ordner gelöscht wird. Um Ollama zu konfigurieren, und nur auf Wunsch, setzt das Programm die Umgebungsvariable OLLAMA_HOST des eigenen Benutzers, wie es die Dokumentation von Ollama vorsieht.</p>
+<h3>OLLAMA, LM STUDIO UND DIE MODELLE</h3>
+<p>Ollama, LM Studio und die Modelle sind Produkte Dritter. Einmal installiert, arbeiten sie eigenständig, mit eigenen Einstellungen und eigenen Datenschutzerklärungen, die für ihre Nutzung auch außerhalb von AI Local Dashboard gelten. Der Verantwortliche erhält nichts von dem, was damit geschieht.</p>
+<h3>MICROSOFT STORE</h3>
+<p>Wurde AI Local Dashboard aus dem Microsoft Store installiert, verarbeitet Microsoft die Installationsdaten nach seiner eigenen Erklärung. Der Verantwortliche erhält sie nicht.</p>
+<h3>VERANTWORTLICHER UND KONTAKT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="zh" lang="zh-Hans">
+<h2>隐私政策</h2>
+<p class="versione">AI Local Dashboard — 版本 1.0.0</p>
+<p>AI Local Dashboard 不会为权利人收集任何个人数据，也不会向其发送任何数据。它不包含遥测，不跟踪使用情况，不需要账户，不显示广告，在任何配置下都不会与权利人的任何服务器通信。</p>
+<h3>哪些数据会离开你的电脑</h3>
+<p>程序只在下列情况下连接互联网，而且始终是从你的电脑连接到公共服务器。每个收到请求的服务器看到的内容与任何网页请求相同：你的连接的 IP 地址、时间以及程序标识（“AILocalDashboard”加版本号）。</p>
+<ul>
+<li>启动时（最多每六小时一次），程序从 https://rvisc.github.io/ailocaldashboard/manifest.json 下载签名目录，这是发布在 GitHub Pages 上的一个文件：请求由托管它的 GitHub 接收。</li>
+<li>当你点击“安装”或“更新”时，程序从目录中指定的官方地址下载安装程序（Ollama 为 github.com，LM Studio 为 lmstudio.ai）。使用“用 winget 安装”时，由 Windows 程序包管理器 winget 连接 Microsoft 和发布者的服务器。</li>
+<li>当你下载模型时，由引擎本身（Ollama 或 LM Studio）从其服务器及模型所在的服务器下载：这些请求适用接收方的隐私政策。</li>
+</ul>
+<p>你在模型测试中写下的问题只会发送到本机上引擎的本地服务器，不会离开这台电脑。如果你开启了局域网访问，服务器也会回应你网络中的其他电脑，它们的问题会发送到这台电脑。</p>
+<h3>哪些数据留在你的电脑上</h3>
+<p>程序写入的所有内容都在其工作文件夹中（通常为 文档\AILocalDashboard）：设置、已验证的目录副本、最近 30 天的日志以及尚未使用的安装程序。日志包含电脑组件的名称、程序路径和执行的操作；不包含测试中的问题和回答。你可以随时删除该文件夹，清除所有内容。为了配置 Ollama，并且只在你要求时，程序会按照 Ollama 文档的说明设置当前用户的 OLLAMA_HOST 环境变量。</p>
+<h3>OLLAMA、LM STUDIO 和模型</h3>
+<p>Ollama、LM Studio 和各个模型都是第三方产品。安装后它们独立运行，有自己的设置和隐私政策，即使在 AI Local Dashboard 之外使用时也同样适用。你用它们做的任何事情，权利人都不会收到。</p>
+<h3>MICROSOFT STORE</h3>
+<p>如果你是从 Microsoft Store 安装 AI Local Dashboard 的，安装数据由 Microsoft 按照其自身的政策处理。权利人不会收到这些数据。</p>
+<h3>权利人和联系方式</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+</main>
+</body>
+</html>

@@ -51,7 +51,7 @@ buona fede, senza divulgare il problema prima che sia corretto, non ha niente da
 Ollama e LM Studio sono prodotti di terzi con le proprie licenze; AI Local Dashboard non è affiliato
 ai loro autori.
 
-<p class="rimandi"><a href="https://apps.microsoft.com/search?query=AI%20Local%20Dashboard">Microsoft Store</a>
+<p class="rimandi"><a href="https://apps.microsoft.com/detail/9NR5SCS8T4B8">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#it">Privacy</a>
 <span class="separatore">·</span> <a href="eula.html#it">Contratto</a></p>
 
@@ -90,7 +90,7 @@ problem before it is fixed, has nothing to fear.
 Ollama and LM Studio are third-party products with their own licences; AI Local Dashboard is not
 affiliated with their authors.
 
-<p class="rimandi"><a href="https://apps.microsoft.com/search?query=AI%20Local%20Dashboard">Microsoft Store</a>
+<p class="rimandi"><a href="https://apps.microsoft.com/detail/9NR5SCS8T4B8">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#en">Privacy</a>
 <span class="separatore">·</span> <a href="eula.html#en">Licence</a></p>
 
@@ -129,7 +129,7 @@ signale de bonne foi, sans divulguer le problème avant sa correction, n'a rien 
 Ollama et LM Studio sont des produits tiers avec leurs propres licences ; AI Local Dashboard n'est
 pas affilié à leurs auteurs.
 
-<p class="rimandi"><a href="https://apps.microsoft.com/search?query=AI%20Local%20Dashboard">Microsoft Store</a>
+<p class="rimandi"><a href="https://apps.microsoft.com/detail/9NR5SCS8T4B8">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#fr">Privacy</a>
 <span class="separatore">·</span> <a href="eula.html#fr">Contrat</a></p>
 
@@ -168,7 +168,7 @@ buena fe, sin divulgar el problema antes de que esté corregido, no tiene nada q
 Ollama y LM Studio son productos de terceros con sus propias licencias; AI Local Dashboard no está
 afiliado a sus autores.
 
-<p class="rimandi"><a href="https://apps.microsoft.com/search?query=AI%20Local%20Dashboard">Microsoft Store</a>
+<p class="rimandi"><a href="https://apps.microsoft.com/detail/9NR5SCS8T4B8">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#es">Privacy</a>
 <span class="separatore">·</span> <a href="eula.html#es">Contrato</a></p>
 
@@ -209,7 +209,7 @@ nichts zu befürchten.
 Ollama und LM Studio sind Produkte Dritter mit eigenen Lizenzen; AI Local Dashboard steht in keiner
 Verbindung zu ihren Herstellern.
 
-<p class="rimandi"><a href="https://apps.microsoft.com/search?query=AI%20Local%20Dashboard">Microsoft Store</a>
+<p class="rimandi"><a href="https://apps.microsoft.com/detail/9NR5SCS8T4B8">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#de">Privacy</a>
 <span class="separatore">·</span> <a href="eula.html#de">Vertrag</a></p>
 
@@ -235,7 +235,7 @@ Verbindung zu ihren Herstellern.
 
 Ollama 和 LM Studio 是拥有各自许可证的第三方产品；AI Local Dashboard 与它们的作者没有任何关联。
 
-<p class="rimandi"><a href="https://apps.microsoft.com/search?query=AI%20Local%20Dashboard">Microsoft Store</a>
+<p class="rimandi"><a href="https://apps.microsoft.com/detail/9NR5SCS8T4B8">Microsoft Store</a>
 <span class="separatore">·</span> <a href="privacy.html#zh">Privacy</a>
 <span class="separatore">·</span> <a href="eula.html#zh">许可协议</a></p>
 
